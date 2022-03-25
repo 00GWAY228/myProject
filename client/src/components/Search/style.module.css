@@ -1,0 +1,11 @@
+
+.field{
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  /* align-items:space-around; */
+}
+.field button{
+  margin-left: 20px;
+}

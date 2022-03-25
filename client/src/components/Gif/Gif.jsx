@@ -1,12 +1,19 @@
-function Gif ({gifs}) {
+// import Skeleton from '@mui/material/Skeleton';
+import CircularProgress from '@mui/material/CircularProgress';
+import Box from '@mui/material/Box';
+import style from './style.module.css';
+
+
+function Gif ({gifs: gif }) {
 
 
 return(
-
-<div className="card gifs">
-  <div className="card-gifs waves-effect waves-block waves-light">
-    {
-      <img className="activator" src={gifs.images.original.webp} alt='not found'/>
+ 
+<div className={style.gif} >
+  <div className={style.gifs}>
+    {gif ?  (<img  src={gif.images.original.webp} alt='not found'/>) : <Box sx={{ display: 'flex' }}>
+      <CircularProgress />
+    </Box>
     }
   </div>
 
